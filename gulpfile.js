@@ -3,7 +3,7 @@ var sass = require('gulp-sass');
 
 gulp.task('xu_project',function(){
     return gulp.src('./src/sass/*.scss')
-                .pipe(sass({outputStyle:'expanded'}).on('error', sass.logError))
+                .pipe(sass({outputStyle:'compact'}).on('error', sass.logError))
                 .pipe(gulp.dest('./src/css'))
 });
 
@@ -22,5 +22,5 @@ gulp.task('server',function(){
     });
 
     // 开启服务器的同时，监听sass的修改
-    gulp.watch('./src/sass/*.scss',['xu_project']);
+    gulp.watch('./src/**/*.scss',['xu_project']);
 })

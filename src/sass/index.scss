@@ -79,6 +79,7 @@
         }
     }
 }
+// 头部样式
 // 尾部样式
 #footer{
     .footer_1{height:65px;padding:20px 0;border-top:1px solid #ddd;border-bottom:1px solid #ddd;overflow:hidden;
@@ -118,7 +119,7 @@
         }
     }
 }
-
+// 尾部样式
 
 // 轮播图样式：-------------------------------------------------------------------------
 .picShow{width:1263px;height:400px;position:relative;overflow:hidden;
@@ -131,3 +132,34 @@
             .ative{background:#58bc58;}
     }
 }
+
+.show{margin-top:10px;margin-bottom:50px;
+    li{float:left;margin-right:26px;
+        &:last-child{margin:0;}
+    }
+}
+// 轮播图样式
+
+// 商品列表样式
+#main{width:1290px;
+    .goods_title{height:41px;padding-top:15px;padding-bottom:10px;border-top:1px solid #ccc;color:#333;line-height:42px;
+        .more{display:block;width:60px;height:42px;float:right;font-size:14px;
+            &:hover{text-decoration: underline}
+        }
+    }
+    .goods_list{
+        ul{
+            li{float:left;width:248px;height:305px;margin:0 5px 5px;position:relative;
+                div{width:248px;height:248px;margin-bottom:5px;overflow:hidden;position:relative;
+                    img{display:block;position:absolute;left:0;top:0;width:100%;height:100%;}    
+                }
+                .s_name{padding-left:2px;color:#555;font-size:14px;line-height:24px;overflow:hidden;white-space: nowrap;max-width: 210px;}
+                .s_price{margin-left:5px;color:#999;font-size:14px;line-height:24px;}
+                .a_car{display:block;width:38px;height:38px;background:url("img/car_0");position:absolute;right:0;bottom:10px;}
+
+            }
+
+        }
+    }
+}
+

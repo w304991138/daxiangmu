@@ -155,3 +155,11 @@ a { color: #000; text-decoration: none; }
 #footer .footer_3 .p3 { height: 47px; }
 
 #footer .footer_3 .p3 img { height: 100%; width: auto; margin: 5px 10px; }
+
+.xuanfu_r { width: 35px; position: fixed; right: 0; bottom: 0; }
+
+.xuanfu_r a { display: block; width: 35px; height: 35px; margin: 2px 0; background: url("img/xuanfu_r"); }
+
+.xuanfu_r li:nth-child(2) a { background: url("img/xuanfu_r") 0 -37px; }
+
+.xuanfu_r .back { background: url("img/xuanfu_r") 0 -74px; }
