@@ -8,9 +8,23 @@
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
     <link rel="stylesheet" type="text/css" href="../css/register.css" />
     <!-- <script type="text/javascript" src="lib/jquery-3.2.1.js"></script> -->
-    <script src="../lib/require.js" data-main="../js/base.js"></script>
+    <script src="../lib/require.js" data-main="../js/register.js"></script>
 </head>
 <body>
+    <!-- 遮罩，弹窗 -->
+    <div id="zhezhao-open">
+        <div class="zhezhao"></div>
+        <div class="open">
+            <h5>信息提示
+                <span class="cha"></span>
+            </h5>
+            <div>
+                <p>
+                    <span class="_tips"></span><span class="tips">请输入正确密码</span>
+                </p>
+            </div>
+        </div>
+    </div>
     <!-- 头部 -->
    <div id="header">
        <div class="top">
@@ -18,9 +32,9 @@
                
            </div>
            <ul class="top_r clearfixed">
-                <li><a href="" class="denglu color">[ 登录 ]</a></li>
+                <li><a href="../html/login.html" class="denglu color">[ 登录 ]</a></li>
                 <li>,</li>
-                <li><a href="" class="zhuche color">[ 注册有惊喜 ]</a></li>
+                <li><a href="../html/register.html" class="zhuche color">[ 注册有惊喜 ]</a></li>
                 <li>|</li>
                 <li class="top_gonggao">
                     <a href="">果园公告</a>
@@ -59,7 +73,7 @@
        </div>
        <div class="nav">
            <div class="nav_l fl">
-               <a href=""><h1>天天果园</h1></a>
+               <a href="../index.html"><h1>天天果园</h1></a>
 
            </div>
        </div>
@@ -70,24 +84,24 @@
         <p class="zc_1">注册会员</p>
         <div><img src="../css/img/zhuche.jpg" class="fl" /><a class="denglu_2" href="" alt="点击此按钮,登录会员账号">会员登录</a> </div>
         <ul class="fl">
-            <li>
+            <li class="clearfixed">
                 <div class="zc_l">手机号</div>
-                <div class="zc_r"><input class="phone_num" type="text" /></div>
+                <div class="zc_r"><input class="phone_num" type="text" /><span></span></div>
             </li>
-            <li><div class="zc_l">密码</div>
-                <div class="zc_r"><input class="password_1" type="password" placeholder="请输入6-20位号码字符"/></div>
+            <li class="clearfixed"><div class="zc_l">密码</div>
+                <div class="zc_r"><input class="password_1" type="password" placeholder="请输入6-20位号码字符"/><span></span></div>
             </li>
-            <li>
+            <li class="clearfixed">
                 <div class="zc_l">确认密码</div>
-                <div class="zc_r"><input class="password_2" type="password" placeholder="请输入6-20位号码字符" /></div></li>
-            <li>
+                <div class="zc_r"><input class="password_2" type="password" placeholder="请输入6-20位号码字符" /><span></span></div></li>
+            <li class="clearfixed">
                 <div class="zc_l">验证码</div>
-                <div class="zc_r yzm"><input type="text" /><span class="yzm"></span><i class="shuaxin"></i></div>
+                <div class="zc_r yzm_"><input type="text" class="_yzm" /><i class="yzm"></i><i class="shuaxin"></i><span></span></div>
             </li>
-            <li><div class="zc_l">手机验证码</div>
-                <div class="zc_r"><input type="text" disabled /><span class="send">发送验证码</span></div></li>
-            <li>
-                <div ><a class="zhuche" href="">注册</a></div>
+            <li class="clearfixed"><div class="zc_l">手机验证码</div>
+                <div class="zc_r"><input type="text" disabled class="dis"/><span class="send">发送验证码</span><span></span></div></li>
+            <li class="clearfixed">
+                <div ><a class="zhuche" href="#">注册</a></div>
                 <div ><a class="denglu" href="">会员登录</a></div>
             </li>
         </ul>

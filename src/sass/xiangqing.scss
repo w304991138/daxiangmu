@@ -1,0 +1,46 @@
+.xiangqing{width:100%;
+    .title{height:30px;padding-top:30px;}
+    .xiangqing_1{
+
+        .left{
+            width:700px;height:560px;float:left;
+            .left_1{float:left;width:140px;height:560px;
+                li{
+                    &:hover{border:1px solid red;
+
+                    }
+                    cursor: pointer;width:138px;height:138px;margin-bottom: 2px;
+                    img{width:100%;height:100%;}
+                }
+            }
+            .left_2{float:left;width:560px;height:560px;
+                img{width:100%;height:100%;}
+            }
+        }
+        .right{width:580px;height:560px;padding-left:28px;float:left;box-sizing:border-box;color:#999;font-size:14px;
+            ul{height:36px;padding-bottom:23px;padding-left:100px;border-bottom:1px solid #ccc;
+                li{
+                    float:left;font-size:18px;width:160px;height:36px;border:1px solid #64a131;border-radius:4px;margin:0 10px;text-align:center;line-height:36px;
+                    &:first-child{background: #f5ffed;}
+                    &:last-child{background:#64a131;color:white;}
+                }
+            }
+            h2.title_1{height:40px;line-height:40px;font-size:24px;color:#555;font-weight:400;padding-left:30px;padding-top:30px;}
+            p.title_3{height:48px;line-height:48px;font-size:16px;padding-left:45px;}
+            .address{height:30px;font-size:14px;}
+            .price{height:75px;line-height:75px;font-size:14px;
+                span{font-size:20px;font-weight:900;color:#64a131;padding-left:15px;}
+            }
+            .guige{height:28px;margin-bottom:22px;font-size:14px;
+                span{display:block;background:#64a131;width:80px;float:right;color:white;text-align:center;height:20px;line-height:20px;margin-right:400px;}
+            }
+            
+            .qty{width:100px;height:22px;text-align:center;height:28px;margin-bottom:30px;
+                span{float:left;line-height:24px;}
+                            .jian,.jia{background:#f1f1f1;float:left;width:22px;height:22px;border:1px solid #ddd;cursor: pointer;line-height:20px;}
+                            .qty_num{float:left;width:22px;height:22px;border:1px solid #ddd;background:#fff;border-left:none;border-right:none;line-height:20px;text-align:center;}
+                            
+                        }
+        }
+    }
+}

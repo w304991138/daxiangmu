@@ -10,6 +10,20 @@
     <script src="lib/require.js" data-main="js/index.js"></script>
 </head>
 <body>
+<!-- 遮罩，弹窗 -->
+    <div id="zhezhao-open">
+        <div class="zhezhao"></div>
+        <div class="open">
+            <h5>信息提示
+                <span class="cha"></span>
+            </h5>
+            <div>
+                <p>
+                    <span class="_tips"></span><span class="tips">请输入正确密码</span>
+                </p>
+            </div>
+        </div>
+    </div>
 <!-- 头部 -->
    <div id="header">
        <div class="top">
@@ -17,9 +31,10 @@
                
            </div>
            <ul class="top_r clearfixed">
-                <li><a href="" class="denglu color">[ 登录 ]</a></li>
-                <li>,</li>
-                <li><a href="" class="zhuche color">[ 注册有惊喜 ]</a></li>
+                <li><span class="ninhao">您好，</span><a href="html/login.html" class="denglu color">[ 登录 ]</a></li>
+                <li class="douhao">,</li>
+                <li><a href="html/register.html" class="zhuche color">[ 注册有惊喜 ]</a></li>
+                <li class="wdgy">我的果园</li>
                 <li>|</li>
                 <li class="top_gonggao">
                     <a href="">果园公告</a>
@@ -58,19 +73,53 @@
        </div>
        <div class="nav">
            <div class="nav_l fl">
-               <a href=""><h1>天天果园</h1></a>
+               <a href="index.html"><h1>天天果园</h1></a>
 
            </div>
            <ul class="nav_c fl">
                <li><a href="">首页<br /><span>Home</span></a></li>
                
-               <li><a href="">鲜果<br /><span>Fruit</span></a></li>
+               <li><a href="html/fruit.html">鲜果<br /><span>Fruit</span></a></li>
                <li><a href="">生鲜<br /><span>Fresh</span></a></li>
                <li><a href="">礼品<br /><span>Gift</span></a></li>
                <li><a href="" class="nav_last">会员中心<br /><span>VIP Club</span></p></a></li>
            </ul>
            <div class="nav_r fr">
-                <a href=""><span class="car_num">0</span><i class="nav_car"></i></a>
+              <div class="car_show">
+                  <p>购物车中没有商品，赶紧选购吧！</p>
+              </div>
+              <div class="car_show2">
+                  <ul class="show_list">
+                    
+                    <!-- <li>
+                      <a href="">
+                        <img src="css/img/goods_2.jpg" class="good_img" />
+                        <div class="good_in">
+                          <p>皓月当空礼盒(含月饼)</p>
+                          <p>￥328.00/1盒</p>
+                        </div>
+                      </a>
+                      <div class="qty">
+                        <span class="jian">-</span>
+                        <input type="text" class="qty_num" value="1"/>
+                        <span class="jia">+</span>
+                      </div>
+                    </li> -->
+                  </ul>
+                  <div class="car_pay">
+                    <div class="pay_l">
+                      共<span>7</span>件商品
+                    </div>
+                    <div class="pay_r">
+                      商品小计 <span class="total">871.80</span>
+                    </div>
+                    <div class="pay_b">
+                      <a href="html/car.html"><p>立即结算</p></a>
+                    </div>
+                  </div>
+              </div>
+
+                <span class="car_num">0</span><i class="nav_car"></i>
                 <div class="nav_box">
                    <input type="text" class="top_sousuo"  placeholder="请输入关键字" value="奇异果"/><i class="iconfont icon-sousuo"></i>
                    <div class="hot_sousuo">
@@ -84,7 +133,10 @@
 
 <!-- 轮播图 -->
     <div class="picShow">
+
         <ul class="showTime">
+          
+          
             <li><a href=""><img src="css/img/show1.jpg" ></a> </li>
             <li><a href=""><img src="css/img/show2.jpg" ></a> </li>
             <li><a href=""><img src="css/img/show3.jpg" ></a> </li>
@@ -112,56 +164,50 @@
 <!-- 商品列表 -->
   <div id="main">
     <div class="goods">
-      <div class="goods_title">
-        <img src="css/img/goods_1.png" height="42" width="301" alt="" />
-        <a href="" class="more">更多></a>
+      <div class="list">
+        <div class="goods_title">
+          <img src="css/img/goods_liping.png" height="42" width="482" alt="" />
+          <a href="" class="more">更多></a>
+        </div>
+        <div class="goods_list ">
+            <ul class="clearfixed good_list l1">                  
+            </ul>
+        </div>
       </div>
-      <div class="goods_list">
-          <ul class="clearfixed">
-              <li>
-                  <div><a href=""><img src="css/img/list_1.jpg" /></a></div>
-                  <p class="s_name">深井冰椰青(原箱)</p>
-                  <p class="s_price">￥99/9个</p>
-                  <a href="" class="a_car"></a>
-              </li>
-              <li>
-                  <div><a href=""><img src="css/img/list_1.jpg" /></a></div>
-                  <p class="s_name">深井冰椰青(原箱)</p>
-                  <p class="s_price">￥99/9个</p>
-                  <a href="" class="a_car"></a>
-              </li>
-              <li>
-                  <div><a href=""><img src="css/img/list_1.jpg" /></a></div>
-                  <p class="s_name">深井冰椰青(原箱)</p>
-                  <p class="s_price">￥99/9个</p>
-                  <a href="" class="a_car"></a>
-              </li>
-              <li>
-                  <div><a href=""><img src="css/img/list_1.jpg" /></a></div>
-                  <p class="s_name">深井冰椰青(原箱)</p>
-                  <p class="s_price">￥99/9个</p>
-                  <a href="" class="a_car"></a>
-              </li>
-              <li>
-                  <div><a href=""><img src="css/img/list_1.jpg" /></a></div>
-                  <p class="s_name">深井冰椰青(原箱)</p>
-                  <p class="s_price">￥99/9个</p>
-                  <a href="" class="a_car"></a>
-              </li>
-              <li>
-                  <div><a href=""><img src="css/img/list_1.jpg" /></a></div>
-                  <p class="s_name">深井冰椰青(原箱)</p>
-                  <p class="s_price">￥99/9个</p>
-                  <a href="" class="a_car"></a>
-              </li>
-              <li>
-                  <div><a href=""><img src="css/img/list_1.jpg" /></a></div>
-                  <p class="s_name">深井冰椰青(原箱)</p>
-                  <p class="s_price">￥99/9个</p>
-                  <a href="" class="a_car"></a>
-              </li>
-          </ul>
+      
+      <div class="list">
+         <div class="goods_title">
+          <img src="css/img/goods_01.png" height="42" width="302" alt="" />
+          <a href="" class="more">更多></a>
+        </div>
+        <div class="goods_list ">
+            <ul class="clearfixed good_list l2">                  
+            </ul>
+        </div>
       </div>
+      
+      <div class="list">
+         <div class="goods_title">
+          <img src="css/img/goods_xianguo.png" height="42" width="482" alt="" />
+          <a href="" class="more">更多></a>
+        </div>
+        <div class="goods_list ">
+            <ul class="clearfixed good_list l3">                  
+            </ul>
+        </div>
+      </div>
+
+      <div class="list">
+        <div class="goods_title">
+          <img src="css/img/good_shengxian.png" height="42" width="482" alt="" />
+          <a href="" class="more">更多></a>
+        </div>
+        <div class="goods_list ">
+            <ul class="clearfixed good_list l4">                  
+            </ul>
+        </div>
+      </div>
+    
     </div>
   </div>
 

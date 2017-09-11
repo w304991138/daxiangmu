@@ -1,0 +1,40 @@
+.fruit{width:100%;padding-top: 26px;box-sizing: border-box;font-size: 14px;color: #333;text-align:center;
+
+    .fruit_title{width:100%;padding-bottom: 6px;padding-top: 12px;border-bottom: 1px solid #ccc;
+        .fruit_l{color: #999;line-height: 24px;margin-right: 20px;float:left;font-size:14px;}
+        .fruit_r{width:1230px;float:left;
+            .left{
+                width:48px;float:left;
+                a{display:block;width:48px;height:24px;background-color: #64a131;color:#fff;font-size:14px;text-align:center;line-height:24px;}
+            }
+            .right{
+
+                width:1182px;float:left;
+                
+                    span{display:block;color: #555555;font-size: 14px;height: 24px;padding:0 9px;line-height:24px;float:left;cursor:pointer;}
+                
+            }
+            .last{background:#f0f0f0;}
+        }
+
+    }
+    
+}
+.f_list{ 
+        .list_right{width:280px;float:left;text-align:center;}
+        .list_left{width:1000px;float:left;
+            li{position:relative;float:left;width:244px;margin:0 3px;overflow:hidden;margin-bottom:8px;
+                .a_car{width:38px;height:38px;bottom:-2px;right:0;background:url('../css/img/car_0');
+                position:absolute;
+            }
+                img{margin-bottom:6px;width:244px;}
+                .f_title_1{height:24px;line-height:24px;margin-left:3px;overflow:hidden;margin-bottom:5px;font-size:14px;
+                    .f_price{margin-left:130px;color:#999;font-size:14px;}
+                }
+                .f_guige{
+                    span{height:22px;width:30px;border:1px solid #ddd;border-radius:2px;text-align:center;line-height:20px;padding-left:0 5px;font-size:13px;display:block;}
+                }
+
+            }
+        }
+    }

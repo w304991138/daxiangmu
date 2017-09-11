@@ -1,4 +1,4 @@
-.register { width: 1000px; height: 535px; margin: 0 auto; overflow: hidden; padding-top: 50px; }
+.register { width: 1000px; height: 535px; margin: 0 auto; padding-top: 50px; }
 
 .register > div { position: relative; }
 
@@ -8,20 +8,34 @@
 
 .register ul { padding-left: 60px; }
 
-.register ul li { margin-bottom: 20px; overflow: hidden; line-height: 40px; }
+.register ul li.clearfixed { margin-bottom: 20px; line-height: 40px; }
 
-.register ul li .zc_l { width: 96px; height: 40px; font-size: 16px; color: #999; float: left; }
+.register ul li.clearfixed .zc_l { width: 96px; height: 40px; font-size: 16px; color: #999; float: left; text-align: right; }
 
-.register ul li .zc_r { width: 300px; height: 40px; padding-left: 40px; float: left; }
+.register ul li.clearfixed .zc_r { width: 300px; height: 40px; padding-left: 40px; float: left; position: relative; }
 
-.register ul li .zc_r input { height: 40px; width: 300px; box-sizing: border-box; padding: 6px 12px; font-size: 14px; color: #555; }
+.register ul li.clearfixed .zc_r input { height: 40px; width: 300px; box-sizing: border-box; padding: 6px 12px; font-size: 14px; color: #555; }
 
-.register ul li .zc_r .yzm { display: block; height: 38px; width: 115px; background: red; position: absolute; right: 0; top: 0; }
+.register ul li.clearfixed .zc_r input.not { border: 1px solid red; }
 
-.register ul li .zc_r.yzm { position: relative; }
+.register ul li.clearfixed .zc_r input.yep { border: 1px solid #58bc58; }
 
-.register ul li .zc_r.yzm input { width: 265px; }
+.register ul li.clearfixed .zc_r .dis { cursor: not-allowed; }
 
-.register ul li .zhuche { margin-left: 136px; width: 143px; height: 38px; background-color: #64a131; border-radius: 4px; float: left; display: block; font-size: 18px; line-height: 38px; color: #fff; text-align: center; }
+.register ul li.clearfixed .zc_r span.yes { display: block; position: absolute; right: -36px; top: 5px; width: 32px; height: 32px; background: url("../css/img/yes.png"); }
 
-.register ul li .denglu { margin-left: 12px; width: 143px; height: 38px; background-color: #f5ffed; border-radius: 4px; float: left; display: block; font-size: 18px; line-height: 36px; color: #7bae55; text-align: center; border: 1px solid #64a131; box-sizing: border-box; }
+.register ul li.clearfixed .zc_r span.no { display: block; position: absolute; right: -36px; top: 5px; width: 32px; height: 32px; background: url("../css/img/no.png"); }
+
+.register ul li.clearfixed .zc_r .send { display: block; position: absolute; top: 0; right: 0; width: 98px; height: 38px; font-size: 14px; text-align: center; cursor: pointer; }
+
+.register ul li.clearfixed .zc_r.yzm_ { position: relative; }
+
+.register ul li.clearfixed .zc_r.yzm_ .yzm { display: block; height: 40px; width: 115px; position: absolute; right: 36px; top: 0; font-size: 28px; font-weight: 900px; text-align: center; line-height: 40px; }
+
+.register ul li.clearfixed .zc_r.yzm_ .shuaxin { display: block; width: 20px; height: 20px; background: url(../css/img/icons.png) -6px -325px; position: absolute; top: 10px; right: 7px; cursor: pointer; }
+
+.register ul li.clearfixed .zc_r.yzm_ input { width: 265px; }
+
+.register ul li.clearfixed .zhuche { margin-left: 136px; width: 143px; height: 38px; background-color: #64a131; border-radius: 4px; float: left; display: block; font-size: 18px; line-height: 38px; color: #fff; text-align: center; }
+
+.register ul li.clearfixed .denglu { margin-left: 12px; width: 143px; height: 38px; background-color: #f5ffed; border-radius: 4px; float: left; display: block; font-size: 18px; line-height: 36px; color: #7bae55; text-align: center; border: 1px solid #64a131; box-sizing: border-box; }

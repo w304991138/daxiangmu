@@ -1,17 +1,27 @@
 .register{
-    width:1000px;height:535px;margin:0 auto;overflow:hidden;padding-top:50px;
+    width:1000px;height:535px;margin:0 auto;padding-top:50px;
     >div{position:relative;}
     .denglu_2{position:absolute;width:153px;height:48px;border-radius:4px;display:block;font-size:18px;line-height:46px;color:#7bae55;text-align:center;border:1px solid #64a131;box-sizing:border-box;left:174px;top:330px;}
     .zc_1{font-size:20px;color:#999;padding-top:15px;padding-bottom:16px;border-bottom:1px solid #ccc;margin-bottom:36px;}
     ul{padding-left:60px;
-        li{margin-bottom:20px;overflow:hidden;line-height:40px;
-            .zc_l{width:96px;height:40px;font-size:16px;color:#999;float:left;}
-            .zc_r{width:300px;height:40px;padding-left:40px;float:left;
-                input{height:40px;width:300px;box-sizing:border-box;padding:6px 12px;font-size:14px;color:#555;}
-                .yzm{display:block;height:38px;width:115px;background:red;position:absolute;right:0;top:0;}
+        li.clearfixed{margin-bottom:20px;line-height:40px;
+            .zc_l{width:96px;height:40px;font-size:16px;color:#999;float:left;text-align:right;}
+            .zc_r{width:300px;height:40px;padding-left:40px;float:left;position:relative;
+                input{height:40px;width:300px;box-sizing:border-box;padding:6px 12px;font-size:14px;color:#555;
+                    // &:focus{outline:none;border-color:#58bc58;box-shadow:0 5px 5px rgba(175,175,175,0.75) }
+                }
+                input.not{border:1px solid red;}
+                input.yep{border:1px solid #58bc58;}
+                .dis{cursor: not-allowed;}
+
+                span.yes{display:block;position:absolute;right:-36px;top:5px;width:32px;height:32px;background:url("../css/img/yes.png");}
+                span.no{display:block;position:absolute;right:-36px;top:5px;width:32px;height:32px;background:url("../css/img/no.png");}
+                .send{display:block;position:absolute;top:0;right:0;width:98px;height:38px;font-size:14px;text-align:center;cursor:pointer;}
             }
-            .zc_r.yzm{position:relative;
-                input{width:265px; }}
+            .zc_r.yzm_{position:relative;
+                .yzm{display:block;height:40px;width:115px;position:absolute;right:36px;top:0;font-size:28px;font-weight:900px;text-align:center;line-height:40px;}
+                .shuaxin{display:block;width:20px;height:20px;background:url(../css/img/icons.png) -6px -325px;position:absolute;top:10px;right:7px;cursor: pointer;}
+                input{width:265px;}}
 
             .zhuche{margin-left:136px;width:143px;height:38px;background-color:#64a131;border-radius:4px;float:left;display:block;font-size:18px;line-height:38px;color:#fff;text-align:center;}
             .denglu{margin-left:12px;width:143px;height:38px;background-color:#f5ffed;border-radius:4px;float:left;display:block;font-size:18px;line-height:36px;color:#7bae55;text-align:center;border:1px solid #64a131;box-sizing:border-box;}

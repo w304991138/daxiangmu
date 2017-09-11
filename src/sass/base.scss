@@ -8,18 +8,25 @@
     height:0;
     visibility:hidden;
 }
+.good_id{display:none;}
 ul,li{list-style:none;}
 .fl{float:left;}
 .fr{float:right;}
 html,body{width:1280px;}
 a{color:#000;text-decoration:none;}
+// .ative{position:absolute;top:0;left:0;}
+.a_car{cursor:pointer;}
+.fei{position:absolute;left:138px;}
 
 @import 'var';
 // 头部样式------------------------------------------------------------------------------
 #header{
     width:100%;
     .top{height:31px;background-color:#eee;
+
         .top_r{float:right;line-height:30px;
+            .ninhao{display:none;}
+            .wdgy{padding-right:8px;}
             .guoyuan{&:hover{background:#fff;};position:relative;
                 .phone{position:absolute;width:290px;height:290px;padding:10px 15px;right:0;top:30px;background-color:#fff;box-shadow:0 10px 15px rgba(175,175,175,0.75);z-index:10;color:#555; box-sizing: border-box;display:none;
                     li{height:50%;width:100%;padding:10px 0;
@@ -62,7 +69,7 @@ a{color:#000;text-decoration:none;}
                 .guoyuan{}
             }
             li:first-child{padding-right:10px;}
-            li:nth-child(3){padding-right:0;}
+            // li:nth-child(3){padding-right:0;}
             
         }
     }
@@ -149,4 +156,18 @@ a{color:#000;text-decoration:none;}
     }
     
     .back{background:url("img/xuanfu_r") 0 -74px;}
+}
+
+// 弹窗样式
+#zhezhao-open{display:none;
+    .zhezhao{opacity:1;position:fixed;top:0;bottom:0;left:0;right:0;z-index:999;background:rgba(0,0,0,0.36);transition:opacity 0.3s;}
+    .open{width:360px;position:fixed;top:50%;left:50%;padding:8px;background:rgba(0,0,0,0.16);z-index:9000;box-sizing:border-box;transform:translate(-50%,-50%);
+        h5{height:40px;padding:0 15px;background:#eaeaea;font-size:16px;line-height:40px;color:#555;position:relative;
+            span.cha{display:block;width:20px;height:20px;right:20px;top:10px;background:url("../css/img/cha.png");position:absolute;}
+        }
+        p{min-height:90px;padding:20px;padding-top:30px;background:#fff;box-sizing:border-box;
+            ._tips{width:32px;height:32px;float:left;background:url("../css/img/open_1.png")}
+            .tips{float:left;width:260px;height:32px;line-height:32px;font-size:14px;}
+        }
+    }
 }

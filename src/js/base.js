@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-09-02 09:53:54
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-04 16:01:33
+* @Last Modified time: 2017-09-06 16:15:51
 */
 require(['config'],function(){
 
@@ -29,10 +29,16 @@ require(['config'],function(){
           scrollTop=0;
        })
 
-
-
-       $('.tou').load('./index.html .top',function(){
-          
+       // 弹窗点击×关闭
+       
+       $('#zhezhao-open .cha').on('click',function(){
+          $('#zhezhao-open ').hide();
+          console.log(666);
        })
+
+
+       
+
+
     })
 })

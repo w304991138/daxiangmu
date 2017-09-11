@@ -2,8 +2,11 @@
 #header{
     // 头部样式
     width:100%;
+    .good_id{display:none;}
     .top{height:31px;background-color:#eee;
         .top_r{float:right;line-height:30px;
+            .ninhao{display:none;}
+            .wdgy{padding-right:8px;}
             .guoyuan{&:hover{background:#fff;};position:relative;
                 .phone{position:absolute;width:290px;height:290px;padding:10px 15px;right:0;top:30px;background-color:#fff;box-shadow:0 10px 15px rgba(175,175,175,0.75);z-index:10;color:#555; box-sizing: border-box;display:none;
                     li{height:50%;width:100%;padding:10px 0;
@@ -46,11 +49,11 @@
                 .guoyuan{}
             }
             li:first-child{padding-right:10px;}
-            li:nth-child(3){padding-right:0;}
+            // li:nth-child(3){padding-right:0;}
             
         }
     }
-    .nav{height:80px;padding:20px 0;
+    .nav{height:80px;padding:20px 0;border-bottom:1px solid #ccc;
         .nav_l{width:300px;height:78px;background:url("img/logo.png");
             h1{line-height:80px;text-indent:-100000px;}
         }
@@ -66,6 +69,39 @@
 
         }
         .nav_r{width:237px;height:70px;position:relative;
+            .car_show{position:absolute;top:95px;right:-11px;width:310px;height:70px;max-height:410px;padding:15px 0 15px 15px;background:#fff;box-shadow:0 0 45px rgba(175,175,175,0.75);z-index:100;box-sizing:border-box;cursor: pointer;display:none;
+                p{line-height:40px;text-align:center;color:#999;font-size:14px;}
+            }
+            .car_show2{position:absolute;top:95px;right:0px;width:310px;max-height:410px;padding:15px 0 15px 15px;background:#fff;box-shadow:0 0 45px rgba(175,175,175,0.75);z-index:100;box-sizing:border-box;cursor: pointer;display:none;
+                .car_pay{margin-right:35px;padding-top:5px;overflow:hidden;
+                    .pay_l{float:left;font-size:14px;
+                        span{color:#64a131;font-size:14px;font-weight:900;}
+                    }
+                    .pay_r{float:right;font-size:14px;
+                        span{color:#64a131;font-size:14px;font-weight:900;}
+                    }
+                    .pay_b{width:260px;height:46px;background:#64a131;float:left;box-sizing:border-box;border-radius:6px;margin-top:10px;
+                        p{text-align:center;line-height:46px;font-size:18px;color:#fff;}
+                    }
+                }
+                .show_list{max-height:290px;overflow:auto;padding-right:15px;margin-bottom:0;box-sizing: border-box;
+                    li{height:86px;padding-bottom:15px;margin-bottom:15px;border-bottom: 1px dashed #eee;position:relative;box-sizing:border-box;
+                        .car_del{position:absolute;right:13px;top:50px;font-size:14px;}
+                        a{display:block;width:100%;height:100%;color:#999;position:relative;
+                            .good_img{display:block;width:70px;height:70px;box-shadow: 0 0 3px rgba(0,0,0,0.3);float:left;}
+                            .good_in{width:178px;height:70px;padding-left:85px;
+                                p{font-size:14px;color:inherit;margin-bottom:6px;overflow:hidden;white-space:nowrap;text-overflow: ellipsis;}
+                            }
+
+                        }
+                        .qty{position:absolute;bottom:15px;left:85px;width:70px;height:22px;text-align:center;
+                            .jian,.jia{background:#f1f1f1;float:left;width:22px;height:22px;border:1px solid #ddd;cursor: pointer;line-height:20px;}
+                            .qty_num{float:left;width:22px;height:22px;border:1px solid #ddd;background:#fff;border-left:none;border-right:none;line-height:20px;text-align:center;}
+                            
+                        }
+                    }
+                }
+            }
             .car_num{position:absolute;top:20px;right:25px;z-index:100;color:white;font-weight:600;}
             .nav_car{background-image:url("img/car.png");display:block;width:43px;height:48px;position:absolute;top:15px;right:10px;}
             .nav_box{width:180px;height:50px;margin-top:20px;
@@ -123,6 +159,7 @@
 
 // 轮播图样式：-------------------------------------------------------------------------
 .picShow{width:1263px;height:400px;position:relative;overflow:hidden;
+
     .showTime{position:absolute;left:0;top:0;width:6315px;
         img{display:block;float:left;}
     }
@@ -142,6 +179,7 @@
 
 // 商品列表样式
 #main{width:1290px;
+    .list{margin-bottom:50px;}
     .goods_title{height:41px;padding-top:15px;padding-bottom:10px;border-top:1px solid #ccc;color:#333;line-height:42px;
         .more{display:block;width:60px;height:42px;float:right;font-size:14px;
             &:hover{text-decoration: underline}
@@ -155,7 +193,8 @@
                 }
                 .s_name{padding-left:2px;color:#555;font-size:14px;line-height:24px;overflow:hidden;white-space: nowrap;max-width: 210px;}
                 .s_price{margin-left:5px;color:#999;font-size:14px;line-height:24px;}
-                .a_car{display:block;width:38px;height:38px;background:url("img/car_0");position:absolute;right:0;bottom:10px;}
+                .a_car{display:block;width:38px;height:38px;background:url("img/car_0");position:absolute;right:0;bottom:10px;cursor:pointer;}
+                .good_id{display:none;}
 
             }
 
